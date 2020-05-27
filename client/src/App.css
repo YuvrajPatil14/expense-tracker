@@ -4,96 +4,158 @@
   box-sizing: border-box;
 
 }
-
-.header{
-  background-color: #99f;
-  text-align: center;
-  padding: 5px;
-  border-radius: 10px;
-}
-.app{
-  margin: 20% 15%;
-  padding: 25PX;
-  background-color: #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-}
-#list,.balance{
-  margin: 20px 0;
-}
-
-.addTransaction{
- width: 100%;
-  
-}
-.inc-exp-container{
-  
-  margin: 20px 20px;
-  padding: 0  15% ;
-  text-align: center;
-  display: flex;
-}
-.income{
-  background-color: #cfc;
-  border-bottom: solid 5px #0f0;
-  padding: 16px;
-  float: left;
-  margin-right:5px ;
-}
 ul{
   list-style: none;
 }
-.list li{
-  background-color:  rgba(255, 255, 255, 0.52);
-  padding: 3px 3px;
-  align-items: center;
-  margin: 4px;
-}
-.list .minus{
-  border-right: solid 3px #f00;
-}
-.list .plus{
-  border-right: solid 3px #0f0;
-}
-.list :hover{
-  background-color:  rgba(255, 0, 0, 0.52);
-}
-.list li span {
-  align-items: center;
-  float: right;
-}
-.delete{
-  float: left;
-  margin-right: 5px;
-  border:none;
-  background: none;
-  
-}
-.expense{
-  background-color: #fcc;
-  border-bottom: solid 5px #f00;
-  padding: 16px;
-  
+
+.app{
+  background-color: rgb(255, 254, 254);
+  width: 40%;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  text-align: center;
+  justify-content: center;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+  box-shadow: 2px 5px 10px 1px #ccc;
 }
 
+.header{
+  background-color: rgb(116, 176, 255);
+  height: 60px;
+  padding: 15px;
+  color: white;
+  font-family: sans-serif;
+  font-size: larger;
+  border-radius: 20px;
+
+}
+.container{
+  font-family: sans-serif;
+
+}
+
+.balance{
+  margin: 20px 30%;
+    height: 50px;
+    color: #696969;
+    border-radius: 15px;
+    padding: 6px;
+
+}
+.minus{
+  background-color: rgba(253, 94, 94, 0.479);
+}
+.plus{
+  background-color: rgba(141, 247, 141, 0.87);
+}
+.inc-exp-container{
+  display: flex;
+    justify-content:space-around;
+    text-align: center;
+}
+
+.income{
+  background-color: #9cf89c5e;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.expense{
+  background-color: #feb1b178;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.transaction{
+  margin-top: 20px;
+  overflow:auto;
+  height: 200px;
+}
+.transaction h3, .addTransaction h3{
+  color:#006eff ;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.list{
+  width: 60%;
+  margin:10px 20%;
+}
+hr{
+  width: 80%;
+  margin: 0 10%;
+}
+
+.list li{
+  border-radius: 5px;
+  height: 30px;
+  padding: 6px 10px;
+  margin: 7px 0px;
+  box-shadow: 2px 2px 2px 1px #ddd;
+}
+
+.list span{
+  float: right;
+}
+
+.addTransaction{
+  margin: 20px;
+}
+#form{
+  margin-top: 20px;
+}
+.form-control label{
+  background-color: #006eff;
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
+  height: 30px;
+}
 .form-control{
-  margin:20px 0;
+  margin: 20px;
+}
+.form-control p{
+  margin-top: 5px;
+  font-size: small;
+}
+.form-control input{
+  height: 30px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 10px;
+  border: thin solid #ddd;
+  background-color: #eee;
 }
 
 .addTx{
-  margin-top: 10px;
-  padding: 5px;
-  border: none;
-  background-color: rgb(90, 90, 197);
+  background-color: #006eff;
   color: #eee;
-  width: 100%;
+  border: none;
+  width:50%;
+  height: 40px;
   border-radius: 10px;
-
+  cursor: pointer;
+  font-size: large;
 }
 
-input{
-  width: 100%;
-  height: 25px;
-  margin: 5px 0;
-  
+.addTx:hover{
+  background-color: #0458c7;
+  color: rgb(255, 255, 255);
+  transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 768px){
+  .app{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  .header{
+    border-radius: 0;
+  }
 }

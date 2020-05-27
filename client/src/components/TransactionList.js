@@ -8,14 +8,14 @@ useEffect(()=>{
   getTransactions();
 },[])
   return (
-    <>
-      <h3>History</h3>
+    <div className="transaction">
+      <h3>Transactions</h3>
       <hr />
       <ul id="list" className="list">
         {transactions.map((transaction) => (
           <Transaction key={transaction._id} transaction={transaction} />
         ))}
       </ul>
-    </>
+    </div>
   );
 };

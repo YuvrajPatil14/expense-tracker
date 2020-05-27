@@ -24,8 +24,8 @@ export const AddTransaction = () => {
       <hr />
       <form id="form" onSubmit={onSubmit}>
         <div className="form-control">
-          <label htmlFor="Text">Text</label>
-          <br />
+          <label htmlFor="Text">Source</label>
+         
           <input
             type="text"
             value={text}
@@ -37,10 +37,8 @@ export const AddTransaction = () => {
         <div className="form-control">
           <label htmlFor="Amount">
             Amount
-            <br />
-            (Negative -expense, positve-income)
           </label>
-          <br />
+        
           <input
             type="number"
             value={amount}
@@ -48,7 +46,10 @@ export const AddTransaction = () => {
             id="amount"
             placeholder="Enter amount.."
           />
+            <br />
+           <p>(Negative -expense, positve-income)</p>
           <br />
+
           <button className="addTx" >
             Add Transaction
           </button>

@@ -16,11 +16,11 @@ export const Income = () => {
         <div className="inc-exp-container">
             <div className="income">
             <h4>Income</h4>
-            <p id="money-plus" className='money plus'>$ {income}</p>
+            <p id="money-plus" className='money'>$ {income}</p>
             </div>
             <div className="expense">
                 <h4>Expense</h4>
-                <p id="money-minus" className="money minus">$ {Math.abs(expense)}</p>
+                <p id="money-minus" className="money">$ {Math.abs(expense)}</p>
             </div>
         </div>
     )

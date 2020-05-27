@@ -2,7 +2,83 @@ import React, { createContext, useReducer } from "react";
 import AppReducer from "./AppReducer";
 import axios from 'axios';
 const initialState = {
-  transactions: [],
+  transactions: [
+    {
+    text:'dummy',
+    _id:12131,
+    amount:-100
+  },
+    {
+    text:'dummy2',
+    _id:12131,
+    amount:100
+  },
+    {
+    text:'dummy2',
+    _id:12131,
+    amount:100
+  },
+    {
+    text:'dummy2',
+    _id:12131,
+    amount:100
+  },
+    {
+    text:'dummy2',
+    _id:12131,
+    amount:100
+  },
+    {
+    text:'dummy2',
+    _id:12131,
+    amount:100
+  },
+    {
+    text:'dummy2',
+    _id:12131,
+    amount:100
+  },
+    {
+    text:'dummy2',
+    _id:12131,
+    amount:100
+  },
+    {
+    text:'dummy2',
+    _id:12131,
+    amount:100
+  },
+    {
+    text:'dummy2',
+    _id:12131,
+    amount:100
+  },
+    {
+    text:'dummy2',
+    _id:12131,
+    amount:100
+  },
+    {
+    text:'dummy2',
+    _id:12131,
+    amount:100
+  },
+    {
+    text:'dummy2',
+    _id:12131,
+    amount:100
+  },
+    {
+    text:'dummy2',
+    _id:12131,
+    amount:100
+  },
+    {
+    text:'dummy2',
+    _id:12131,
+    amount:100
+  },
+],
   error:null,
   loading:true
 };

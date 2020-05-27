@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export const Headers = () => {
-    return (
-        <h2 className="header">
-          Expense Tracker  
-        </h2>
-    )
-}
-
-
+  return (
+    <div className="header">
+      <h2>Expense Tracker</h2>
+    </div>
+  );
+};

@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.header{
+  background-color: #99f;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+.app{
+  margin: 20% 15%;
+  padding: 25PX;
+  background-color: #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+#list,.balance{
+  margin: 20px 0;
+}
+
+.addTransaction{
+ width: 100%;
+  
+}
+.inc-exp-container{
+  
+  margin: 20px 20px;
+  padding: 0  15% ;
+  text-align: center;
+  display: flex;
+}
+.income{
+  background-color: #cfc;
+  border-bottom: solid 5px #0f0;
+  padding: 16px;
+  float: left;
+  margin-right:5px ;
+}
+ul{
+  list-style: none;
+}
+.list li{
+  background-color:  rgba(255, 255, 255, 0.52);
+  padding: 3px 3px;
+  align-items: center;
+  margin: 4px;
+}
+.list .minus{
+  border-right: solid 3px #f00;
+}
+.list .plus{
+  border-right: solid 3px #0f0;
+}
+.list :hover{
+  background-color:  rgba(255, 0, 0, 0.52);
+}
+.list li span {
+  align-items: center;
+  float: right;
+}
+.delete{
+  float: left;
+  margin-right: 5px;
+  border:none;
+  background: none;
+  
+}
+.expense{
+  background-color: #fcc;
+  border-bottom: solid 5px #f00;
+  padding: 16px;
+  
+}
+
+.form-control{
+  margin:20px 0;
+}
+
+.addTx{
+  margin-top: 10px;
+  padding: 5px;
+  border: none;
+  background-color: rgb(90, 90, 197);
+  color: #eee;
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+input{
+  width: 100%;
+  height: 25px;
+  margin: 5px 0;
+  
+}

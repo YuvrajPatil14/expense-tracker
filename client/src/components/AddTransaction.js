@@ -15,6 +15,8 @@ export const AddTransaction = () => {
     console.log('called');
     
     addTransaction(newTransaction)
+    setText('')
+    setAmount(0)
     
   }
 
@@ -29,7 +31,8 @@ export const AddTransaction = () => {
           <input
             type="text"
             value={text}
-            onChange={(e) => setText(e.target.value)}
+            onChange={(e) => setText(e.target.value)
+            }
             id="text"
             placeholder="Enter text..."
           />

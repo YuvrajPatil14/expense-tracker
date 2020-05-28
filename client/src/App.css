@@ -107,9 +107,11 @@ hr{
   padding: 6px 10px;
   margin: 7px 0px;
   box-shadow: 2px 2px 2px 1px #ddd;
+
 }
+
 .list li:hover{
-  background-color: rgb(250, 159, 143);
+  background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transform: translateY(-3px);
 }

@@ -7,15 +7,24 @@ export const TransactionList = () => {
 useEffect(()=>{
   getTransactions();
 },[])
-  return (
-    <div className="transaction">
-      <h3>Transactions</h3>
-      <hr />
-      <ul id="list" className="list">
+
+let disp=(<h4 style={{'color':'#999'}}>Start adding expenses...</h4>);
+if(transactions.length !== 0)
+{
+  disp = (
+    <ul id="list" className="list">
         {transactions.map((transaction) => (
           <Transaction key={transaction._id} transaction={transaction} />
         ))}
       </ul>
+  )
+}
+
+  return (
+    <div className="transaction">
+      <h3>Transactions</h3>
+      <hr />
+      {disp}
     </div>
   );
 };

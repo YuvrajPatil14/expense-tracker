@@ -22,15 +22,25 @@ ul{
 }
 
 .header{
-  background-color: rgb(116, 176, 255);
-  height: 60px;
+  /* height: 60px; */
   padding: 15px;
-  color: white;
+  color: #2196F3;
   font-family: sans-serif;
   font-size: larger;
-  border-radius: 20px;
-
+  border-bottom: #2196F3 solid 2px;
+  display: flex;
+  justify-content: center;
 }
+/* .applogo{
+  
+  margin:5px;
+  height: 25px;
+  width: 25px;
+  background-color: #2196F3 ;
+  border-radius: 50%;
+  padding: 10px;
+  
+} */
 .container{
   font-family: sans-serif;
 
@@ -38,7 +48,7 @@ ul{
 
 .balance{
   margin: 20px 30%;
-    height: 50px;
+    
     color: #696969;
     border-radius: 15px;
     padding: 6px;
@@ -72,8 +82,7 @@ ul{
 }
 .transaction{
   margin-top: 20px;
-  overflow:auto;
-  height: 200px;
+ 
 }
 .transaction h3, .addTransaction h3{
   color:#006eff ;
@@ -83,6 +92,10 @@ ul{
 .list{
   width: 60%;
   margin:10px 20%;
+  overflow:auto;
+  
+  height: 100px;
+
 }
 hr{
   width: 80%;
@@ -91,14 +104,18 @@ hr{
 
 .list li{
   border-radius: 5px;
-  height: 30px;
   padding: 6px 10px;
   margin: 7px 0px;
   box-shadow: 2px 2px 2px 1px #ddd;
 }
-
+.list li:hover{
+  background-color: rgb(250, 159, 143);
+  cursor: pointer;
+  transform: translateY(-3px);
+}
 .list span{
   float: right;
+ 
 }
 
 .addTransaction{
@@ -149,13 +166,75 @@ hr{
   transform: translateY(-2px);
 }
 
-@media only screen and (max-width: 768px){
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+.transaction::-webkit-scrollbar-thumb {
+  /* background-color:  #ccc;
+  border-radius: 20px;
+  height: 10px; */
+  position            : relative;
+  background          : rgba(0, 0, 0, .1);
+  width               : 9px;
+  border-radius       : 10px;
+  top                 : 0;
+  z-index             : 2;
+  cursor              : pointer;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+}
+
+@media only screen and (max-width: 903px){
+  .app{
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 720px){
   .app{
     width: 100%;
     height: 100%;
     border-radius: 0;
+    box-shadow: none;
   }
   .header{
     border-radius: 0;
   }
+  .list{
+    height: 10em;
+  }
+}
+
+@media (max-width:365px){
+  .app{
+    height: 100%;
+    width: 100%;
+    box-shadow: none;
+    font-size: smaller;
+  }
+  .form-control input{
+    margin-top: 10px;
+  }
+  .form-control p{
+    font-size: 12px;
+  }
+  .addTransaction{
+    width: 90%;
+  }
+  .addTx{
+    width: 90%;
+    font-size: 1em;
+  }
+  
+}
+
+
+
+@media(max-width:250px){
+  .list span{
+    float: none;
+  }
+ input{
+   width: 100%;
+ }
 }
